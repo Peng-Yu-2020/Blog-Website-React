@@ -14,6 +14,9 @@ const Home = () => {
             setBlogs(data)
             setIsPending(false)
         })
+        .catch(e => {
+            console.log(e.message);
+        })
         }, 1000)
     }, []);
 
