@@ -1,11 +1,12 @@
 const Blog = (props) => {
     return ( 
-        <div>
-        <p>{props.title}</p>
-        <p>{props.body}</p>
-        <p>{props.author}</p>
-        <p>{props.id}</p>
+        <div className="blog-preview" key={props.id}>
+        <h2>{props.title}</h2>
+        <p>Written by {props.body}</p>
+        {/* <p>{props.author}</p>
+        <p>{props.id}</p> */}
         </div>
+        
         
      );
 }
