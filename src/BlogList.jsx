@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-
 const BlogList = ({blogs, title}) => {
 
     return (
@@ -13,9 +12,6 @@ const BlogList = ({blogs, title}) => {
                     <h2>{blog.title}</h2>
                     <p>written by {blog.author}</p>
                     </Link>
-
-            
-                        
                     </div>
                 )
             })}
